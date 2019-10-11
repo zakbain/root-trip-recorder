@@ -16,11 +16,11 @@ the possible trips.
 ### Interfaces and Classes ###
 1. Driver -> Object for keeping track of Driver Information (Name)
 2. Trip -> Object for keeping track of a trip (not coupled with driver)
-3. TripRecorder -> The class responsible for holding known drivers, list of trips, 
+3. DriverTrips -> Object responsible for holding known drivers, list of trips, 
 and connecting the drivers to its history of trips 
-4. TripFactory -> Create trips based on necessary requirements   
-5. TripReporter -> Generates reports of driver and trip information 
-6. TripConsole -> Main entry point! Handle client interactions via the command line
+3. TripReader -> Reads the input to generate DriverTrips
+4. TripWriter -> Reads DriverTrips to generate and write a report
+5. TripConsole -> Main entry point! Handle client interactions via the command line
 
 ### Testing ###
 1. Test Driven Development - I wrote the interfaces, and tests first before 
